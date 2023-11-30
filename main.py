@@ -1,2 +1,5 @@
+def show_update():
+    print("Updated!")
+
 if __name__ == "__main__":
-    print("This is the intiial commit!")
+    show_update()
