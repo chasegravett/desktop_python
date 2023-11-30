@@ -42,7 +42,7 @@ button = tk.Button(
 button.grid(column=0, row=0) #Position button directly under the existing label
 
 # Starting the loop that allows the window to be displayed until closed
-window.mainloop()
+
 
 if __name__ == "__main__":
-    pass
+    window.mainloop()
