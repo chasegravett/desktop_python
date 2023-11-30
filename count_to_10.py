@@ -1,6 +1,6 @@
 import tkinter as tk
 
-FONT_STYLE = "Arial Bold"
+FONT_STYLE = "Lucida Console"
 FONT_SIZE = 35
 
 window = tk.Tk()
@@ -15,7 +15,7 @@ window.title("A Desktop Application made with Python!")
 counter = 0
 
 # Puts text (or "label") to the screen
-label = tk.Label(window, text=counter, font=(FONT_STYLE, FONT_SIZE))
+label = tk.Label(window, text=f"You are currently on number {counter}", font=(FONT_STYLE, FONT_SIZE))
 label.grid(column=0, row=1)
 
 def add_one():
@@ -23,7 +23,7 @@ def add_one():
     counter += 1
     
     if counter < 10:
-        label.configure(text=counter)
+        label.configure(text=f"You are currently on number {counter}")
     else:
         button.configure(text="Done!")
         label.configure(text="Congrats! You counted to 10!")
@@ -43,3 +43,6 @@ button.grid(column=0, row=0, ) #Position button directly under the existing labe
 
 # Starting the loop that allows the window to be displayed until closed
 window.mainloop()
+
+if __name__ == "__main__":
+    pass
